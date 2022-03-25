@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         b_detail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                User user = new User("Temur", 18);
+                User user = new User("Temur", 19);
                         OpenDetailActivity(user);
             }
         });
