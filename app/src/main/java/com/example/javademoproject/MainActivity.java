@@ -21,15 +21,12 @@ public class MainActivity extends AppCompatActivity {
         Button b_detail = findViewById(R.id.b_detail);
         b_detail.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                User user = new User("Temur", 19);
-                        OpenDetailActivity(user);
-            }
+            public void onClick(View view) { OpenDetailActivity(); }
         });
     }
-    void OpenDetailActivity(User user){
+    void OpenDetailActivity(){
         Intent intent = new Intent(this, DetailActivity.class);
-        intent.putExtra("user",user);
+        intent.putExtra("name","Temur 17");
         startActivity(intent);
     }
 }

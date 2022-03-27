@@ -6,8 +6,6 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.javademoproject.Model.User;
-
 public class DetailActivity extends AppCompatActivity {
 
     private static final String TAG = DetailActivity.class.toString();
@@ -20,9 +18,9 @@ public class DetailActivity extends AppCompatActivity {
     }
     void initViews(){
         TextView tv_detail = findViewById(R.id.tv_detail);
-       User user = (User) getIntent().getSerializableExtra("user".toString());
-        Log.d(TAG,user.toString());
+        String name = getIntent().getStringExtra("Temur");
+        Log.d(TAG,name);
 
-        tv_detail.setText(user.toString());
+        tv_detail.setText(name);
     }
 }
